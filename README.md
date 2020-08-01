@@ -1,1 +1,0 @@
-# t-sanchez.github.io
