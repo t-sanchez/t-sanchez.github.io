@@ -1,13 +1,13 @@
 ---
 layout: about
-title: About 
+title: About me 
 permalink: /
-description: "e-mail: firstname.lastname@epfl.ch" 
+description:  
 
 profile:
   align: right
   image: thomas.jpg
-  address: 
+  address: "e-mail: firstname.lastname@epfl.ch"
 
 news: False  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
