@@ -43,7 +43,7 @@
           </li>
           {% endif %}
           <!-- Other pages -->
-          {% assign sorted_pages = site.pages | sort: "title" %}
+          {% assign sorted_pages = site.pages | sort: "order" %}
           {% for p in sorted_pages %}
           {% if p.nav and p.autogen == nil %}
           {% if p.dropdown %}
@@ -67,7 +67,7 @@
           {% else %}
           <li class="nav-item {% if page.title == p.title %}active{% endif %}">
               <a class="nav-link" href="{{ p.url | relative_url }}">
-                {{ p.title }}
+                {{ p.title | downcase}}
                 {% if page.title == p.title %}
                 <span class="sr-only">(current)</span>
                 {% endif %}
@@ -76,6 +76,15 @@
           {% endif %}
           {% endif %}
           {% endfor %}
+		  <li class="nav-item dropdown">
+		    <a
+			  target="_blank"
+			  class="nav-link"
+			  href="{{ site.baseurl }}/assets/pdf/CV_Thomas_Sanchez.pdf"
+			  >CV</a
+		    >
+		  </li>
+
           {% if site.enable_darkmode %}
             <div class = "toggle-container">
               <a id = "light-toggle">
