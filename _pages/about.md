@@ -7,7 +7,7 @@ description:
 profile:
   align: right
   image: thomas.jpg
-  address: "e-mail: firstname.lastname@epfl.ch"
+  address: "e-mail: firstname dot lastname at epfl dot ch"
 
 news: False  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
